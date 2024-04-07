@@ -1,0 +1,94 @@
+:root{
+    --dark-green: rgba(53, 80, 59, 0.25);
+    --white: #fff;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(fonts/Norse-Bold.otf) format('opentype');
+}
+
+
+@font-face {
+    font-family: 'Rosmatika';
+    src: url(fonts/RosmatikaRegular-BWA45.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(images/autumn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: 150px;
+    padding-top: 20px;
+    background-color: var(--dark-green);
+    flex-wrap: nowrap;
+}  
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Rosmatika;
+    font-size: 6em;
+    font-style: italic;
+    color: var(--white);
+}
+
+.title-highlight object{
+    position: relative;
+    right: 4px;
+    bottom: 12px;
+    max-height: 60px;
+
+}
+
+.right {
+    flex: 1;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    font-size: .8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    opacity: .9;
+}

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="left">
         <div class="title-highlight">
@@ -17,16 +19,15 @@
 
         <div class="footer">
             <p>Photo by <a href="https://unsplash.com/@landscapeplaces">Phil Desforges</a> on <a
-                href="https://unsplash.com/">Unsplash</a> </p>
+                    href="https://unsplash.com/">Unsplash</a> </p>
         </div>
     </div>
-
-
     <div class="right">
         <div class="desc-container">
             <div class="desc">
-                    This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.
-                    Sign up <em>now</em> to get started.
+                This is not a real service! You know you need something like this in your life to help you realize your
+                deepest dreams.
+                Sign up <em>now</em> to get started.
             </div>
             <div class="desc-ex">You <em>know</em> you want to.</div>
         </div>
@@ -38,52 +39,55 @@
                 <div class="left-forms">
                     <form action="" method="post">
                         <ul>
-                            <li> 
-                                <label for="first_name">FIRST NAME <strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="text" name="first_name" id="first_name" placeholder="" required>
+                            <li>
+                                <label for="first_name">FIRST NAME <strong><span
+                                            aria-label="required">*</span></strong></label><br>
+                                <input type="text" name="first_name" id="first_name" placeholder="" required tabindex="1">
                             </li>
                             <li>
-                                <label for="email">EMAIL <strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="email" name="email" id="email" placeholder="" required>
+                                <label for="email">EMAIL <strong><span
+                                            aria-label="required">*</span></strong></label><br>
+                                <input type="email" name="email" id="email" placeholder="" required tabindex="3">
                             </li>
                             <li>
-                                <label for="password">PASSWORD <strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="password" name="password" id="password" placeholder="" required>
-                                <p id="passwordMatch">* Passwords do not match</p>
+                                <label for="password">PASSWORD <strong><span
+                                            aria-label="required">*</span></strong></label><br>
+                                <input type="password" name="password" id="password" placeholder="" required tabindex="5">
+                                <p id="passwordMatch"></p>
                             </li>
                         </ul>
                 </div>
                 <div class="right-forms">
                     <form action="" method="post"></form>
-                        <ul>
-                            <li>
-                                <label for="last_name">LAST NAME <strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="text" name="last_name" id="last_name" placeholder="" required>
-                            </li>
-                            <li>
-                                <label for="last_name">PHONE NUMBER </label><strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="text" name="last_name" id="last_name" placeholder="" required>
-                            </li>
-                            <li>
-                                <label for="last_name">CONFIRM PASSWORD <strong><span aria-label="required">*</span></strong></label><br>
-                                <input type="text" name="last_name" id="last_name" placeholder="" required>
-                            </li>
-                        </ul>
-
+                    <ul>
+                        <li>
+                            <label for="last_name">LAST NAME <strong><span
+                                        aria-label="required">*</span></strong></label><br>
+                            <input type="text" name="last_name" id="last_name" placeholder="" required tabindex="2">
+                        </li>
+                        <li>
+                            <label for="phone_number">PHONE NUMBER </label><strong><span
+                                    aria-label="required">*</span></strong></label><br>
+                            <input type="tel" name="phone_number" id="phone_number" placeholder="" required tabindex="4">
+                        </li>
+                        <li>
+                            <label for="confirm_password">CONFIRM PASSWORD <strong><span
+                                        aria-label="required">*</span></strong></label><br>
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="" required tabindex="6">
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
 
         <div class="bottom-container">
             <button type="submit">Create Account</button>
             <div class="login">Already have an account? <a href="" onclick="return false;">Log in</a></div>
-
         </div>
 
-
     </div>
-    
-    
+
+    <script src="index.js"></script>
 </body>
+
 </html>
